@@ -1,8 +1,8 @@
-package Seminar1;
+
 
 import java.time.LocalDate;
 
-public class Fish extends Animal {
+public class Fish extends Animal implements Swimable {
 
     String color;
 
@@ -10,14 +10,15 @@ public class Fish extends Animal {
         super(name, birthday, illness);
         this.color = color;
     }
-    
-    @Override
-    protected void fly() {
-        System.out.println("Только летучии рыбы могут планировать, но даже они не летают");
+    public Fish() {
+        
     }
 
     @Override
-    protected void toGo() {
-        System.out.println("Рыба не может бегать");
+    public double swim() {
+        return 30;
     }
+    
+    
+    
 }

@@ -1,8 +1,8 @@
-package Seminar1;
+
 
 import java.time.LocalDate;
 
-public class Bat extends Animal {
+public class Bat extends Animal implements Goable, Flyable {
 
     int wingspan;
    
@@ -12,9 +12,18 @@ public class Bat extends Animal {
         this.wingspan = wingspan;
     }
 
-    
+
     @Override
-    protected void fly() {
-        System.out.println("Летучии мыши не плавают");
+    public double fly() {
+        return 10;
     }
+
+
+    @Override
+    public double run() {
+        return 1;
+    }
+
+    
+    
 }

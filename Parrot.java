@@ -1,10 +1,17 @@
-package Seminar1;
 
-public class Parrot extends Animal {
+
+public class Parrot extends Animal implements Flyable, Goable{
 
     
+    
+
     @Override
-    protected void swim() {
-        System.out.println("Попугаи не плавают");
+    public double run() {
+        return 3;
+    }
+
+    @Override
+    public double fly() {
+        return 20;
     }
 }

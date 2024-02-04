@@ -1,4 +1,4 @@
-package Seminar1;
+
 
 public class Illness {
     String name;

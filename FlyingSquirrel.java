@@ -1,13 +1,10 @@
-package Seminar1;
 
-public class FlyingSquirrel extends Animal{
-    @Override
-    protected void fly() {
-        System.out.println("Белка летяга не летает, а парит");
-    }
+
+public class FlyingSquirrel extends Animal implements Goable{
+    
 
     @Override
-    protected void swim() {
-        System.out.println("Белка летяга не умеет плавать");
+    public double run() {
+        return 25;
     }
 }

@@ -1,11 +1,11 @@
-package Seminar1;
+
 
 import java.time.LocalDate;
 
 /**
  * Animal
  */
-public class Animal {
+public abstract class Animal {
 
     protected String name;
     protected LocalDate birthday;
@@ -69,17 +69,7 @@ public class Animal {
         slip();
     }
 
-    protected void toGo(){
-        System.out.println(getType() + " бежит");
-    }
-
-    protected void swim(){
-        System.out.println(getType() + " плавает");
-    }
-
-    protected void fly(){
-        System.out.println(getType() + " длетает");
-    }
+    
 
     @Override
     public String toString() {

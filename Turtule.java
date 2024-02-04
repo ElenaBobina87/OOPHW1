@@ -1,15 +1,23 @@
-package Seminar1;
+
 
 import java.time.LocalDate;
 
-public class Turtule extends Animal {
+public class Turtule extends Animal implements Swimable, Goable{
     int shellSize;
     public Turtule(String name, LocalDate birthday, Illness illness, int shellSize) {
         super(name, birthday, illness);
         this.shellSize = shellSize;
     }
+    public Turtule() {
+        
+    }
+   
     @Override
-    protected void fly() {
-        System.out.println("Черепахи не летают");
+    public double run() {
+        return 4;
+    }
+    @Override
+    public double swim() {
+        return 20;
     }
 }
