@@ -28,8 +28,8 @@ public class Main {
         list.add(new Turtule());
         // System.out.println(list);
         VeterinaryClinic vc = new VeterinaryClinic();
-        List<Animal> fly = vc.getFlyable(list);
-        System.out.println(fly);
+        //List<Animal> fly = vc.getFlyable(list);
+        //System.out.println(fly);
 
         ArrayList<Personal> listPersonals = new ArrayList<Personal>();
         listPersonals.add(new Doctor());
@@ -38,8 +38,22 @@ public class Main {
         listPersonals.add(new Nurse());
         listPersonals.add(new Nurse());
 
-        List<Doctor> doctors = vc.getDoctors(listPersonals);
-        System.out.println(doctors);
+        //List<Doctor> doctors = vc.getDoctors(listPersonals);
+        //System.out.println(doctors);
+
+        // решение препода
+
+        VeterinaryClinic clinic = new VeterinaryClinic();
+        clinic.addPatient(bat);
+        Doctor doctor = new Doctor(); 
+        clinic.addEmployes(doctor);
+
+        System.out.println(doctor.doDiagnose(bat));
+
+
+            
+                
+        
     }
 
     
